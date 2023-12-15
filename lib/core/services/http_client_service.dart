@@ -2,11 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:arab_therapy_task/core/consts/end_points_constants.dart';
-import 'package:arab_therapy_task/core/consts/storage_constants.dart';
-import 'package:arab_therapy_task/core/services/local_storage_service.dart';
-import 'package:arab_therapy_task/core/widgets/dialog_widgets.dart';
 import 'package:arab_therapy_task/models/api_response.dart';
-import 'package:arab_therapy_task/features/user_controller.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:get/get.dart';
 
@@ -33,7 +29,7 @@ class HttpClientService {
       } else if (requestType == HttpRequestTypes.patch) {
         response = await patch(endPoint, formData: data, header: header);
       }
-      print("TESTAPI::${response?.statusCode}::${response?.successFlag}::${response?.error}::${response?.body}");
+      // print("TESTAPI::${response?.statusCode}::${response?.successFlag}::${response?.error}::${response?.body}");
 
 
     return response!;
@@ -41,7 +37,7 @@ class HttpClientService {
 
   static Future<dio.BaseOptions> getBaseOptions({Map<String, String>? header, int? timeout}) async {
     header ??= <String, String>{};
-    String? token =await LocalStorageService.getData(key: AppStorageKeys.userToken, type: DataType.string);
+    String? token ="";
 
     print("ChECK::Token::$token");
     token==null?

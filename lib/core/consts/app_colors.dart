@@ -13,21 +13,11 @@ class AppColors {
 
   // to main colors
   static const Color dartPrimaryColor = Color(0xFF4B348C);
-  static const Color primaryColor = Color(0xFF885EFE);
+  static const Color primaryColor = Color(0xFF274472);
   static const Color lightPrimaryColor = Color(0xFFAF94FF);
-  static const Color secondaryColor = Color(0xFF1E3A6A);
+  static const Color secondaryColor = Color(0xFFC3E0E5);
   static const Color thirdColor = Color(0xFFf65156);
 
-  // to app colors
-  static const Color lightColor = Color(0xFFF8F8F8);
-  static const Color carbColor = Color(0xFF1285D7);
-  static const Color caloriesColor = Color(0xFFF46C42);
-  static const Color fatColor = Color(0xFFDFB007);
-  static const Color protienColor = Color(0xFFFF2C2C);
-  static const Color foodColor = Color(0xFFFF7F6B);
-  static const Color sleepColor = Color(0xFF9D28AC);
-  static const Color waterColor = Color(0xFF64B0FC);
-  static const Color trainingColor = Color(0xFF6744CB);
 
  // shadow colors
   static const Color transparentColor = Colors.transparent;
@@ -44,7 +34,7 @@ class AppColors {
 
   static const Color delete = Color(0xFFF55157);
   static const Color rate = Color(0xFFFFC62A);
-  static const Color accept = Color(0xFF4444FF);
+
   static const Color success = Color(0xFF00AF6C);
   static const Color backButtonColor = Color(0xFF252F38);
 

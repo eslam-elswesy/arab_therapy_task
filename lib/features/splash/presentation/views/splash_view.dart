@@ -14,30 +14,19 @@ class SplashView extends GetView<SplashController> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: AppColors.primaryColor,
-        body:Stack(
-          children: [
-          Container(
+        body:Container(
           width: 1.sw,
           height: 1.sh,
-          child: Image.asset(
-            ImagesAssetsConstants.background
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(width: 1.sw),
+               Center(child:Hero(
+                  tag: "ScaleTransitionAnimationWidget",
+                  child: ScaleTransitionAnimationWidget())),
+            ],
           ),
-          ),
-            Positioned.fill(
-              child: Container(
-                width: 1.sw,
-                height: 1.sh,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(width: 1.sw),
-                   const Center(child:ScaleTransitionAnimationWidget()),
-                  ],
-                ),
-              ),
-            ),
-          ],
         ),
     );
   }

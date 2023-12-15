@@ -47,7 +47,7 @@ Future<void> main() async {
       builder: (BuildContext context, Widget? child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          title: "TADREAB",
+          title: "Arab therapy",
           initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
           translations: Translation(),
