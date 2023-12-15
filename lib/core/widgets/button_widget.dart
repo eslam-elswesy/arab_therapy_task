@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:arab_therapy_task/routes/app_pages.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ButtonWidget extends StatelessWidget {
   final Function() onTap;
@@ -44,11 +45,11 @@ class ButtonWidget extends StatelessWidget {
     width ??= 0.8.sw;
 
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: padding??8),
+      padding:  EdgeInsets.symmetric(vertical: padding??2),
       child: Container(
           width: width,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(borderRadius??35.0),
+            borderRadius: BorderRadius.circular(borderRadius??5.0),
             border: Border.all(width: 1, color: borderColor!),
             color: btnColor
           ),
@@ -61,8 +62,8 @@ class ButtonWidget extends StatelessWidget {
 
     if(waitingAction!=null&&waitingAction!)
       {
-        return const Padding(
-          padding: EdgeInsets.all(8),
+        return  Padding(
+          padding: EdgeInsets.all(2.h),
           child: Center(child: CircularProgressIndicator(backgroundColor: AppColors.white,)),
         );
       }

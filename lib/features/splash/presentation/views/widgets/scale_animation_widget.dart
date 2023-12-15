@@ -34,7 +34,7 @@ class _ScaleTransitionAnimationWidgetState extends State<ScaleTransitionAnimatio
   Widget build(BuildContext context) {
     return ScaleTransition(
       scale: _animation,
-      child:  SvgWidget(LogosAssetsConstants.logoWhite,width: 100.w,height: 100.w,),
+      child:  SvgWidget(LogosAssetsConstants.logo,width: 100.w,height: 100.w,),
     );
   }
 }

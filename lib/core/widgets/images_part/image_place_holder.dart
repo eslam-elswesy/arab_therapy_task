@@ -18,12 +18,12 @@ class ImagePlaceHolder extends StatelessWidget {
   Widget build(BuildContext context) {
     // print("BB::$img");
     return FadeInImage.assetNetwork(
-      placeholder: holder ?? ImagesAssetsConstants.holder,
+      placeholder: holder ?? ImagesAssetsConstants.logo,
       image: img ,
       height: height,
       width: width,
       imageErrorBuilder: (context, url, error) => Image.asset(
-        holder?? ImagesAssetsConstants.userHolder,
+        holder?? ImagesAssetsConstants.logo,
         height: height,
         width: width,
         fit: fit ?? BoxFit.fill,

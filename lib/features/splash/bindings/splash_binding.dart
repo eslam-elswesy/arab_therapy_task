@@ -1,4 +1,4 @@
-import 'package:arab_therapy_task/features/user_controller.dart';
+import 'package:arab_therapy_task/features/home/presentation/controllers/user_controller.dart';
 import 'package:arab_therapy_task/routes/app_pages.dart';
 import 'package:get/get.dart';
 
